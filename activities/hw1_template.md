@@ -114,4 +114,4 @@ Select **one** option below and complete the applicable details.
 
 I confirm that this work is based primarily on my own observation, experience, and reasoning. Any external sources or tools used have been acknowledged above.
 
-**Name:** [Write your full name]
+**Name:** [Sammy R. Ditanongun]
