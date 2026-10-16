@@ -8,7 +8,7 @@
 
 | Member | GitHub username | Personal CSC181 repository |
 |---|---|---|
-| [Full name] | [Username] | [Repository link] |
+| [Sammy R. Ditanongun] | [Username] | [Repository link] |
 | [Full name] | [Username] | [Repository link] |
 | [Full name] | [Username] | [Repository link] |
 | [Full name] | [Username] | [Repository link] |
