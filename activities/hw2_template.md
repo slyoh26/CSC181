@@ -3,14 +3,14 @@
 ## Team Information
 
 - Team name: [Team name] (coz why not? ^_^)
-- Working arrangement: [Laboratory, personal computers, or mixed]
-- Coordination method: [In-person discussion, group call, shared document, etc.]
+- Working arrangement: Personal Computers
+- Coordination method: Group Chat, Google Document
 
 | Member | GitHub username | Personal CSC181 repository |
 |---|---|---|
-| Sammy R. Ditanongun | [Username] | [Repository link] |
-| [Full name] | [Username] | [Repository link] |
-| [Full name] | [Username] | [Repository link] |
+| Juniezsa Cassandra C. Bacus | fried.ShangHai | https://github.com/Juniezsa/CSC181.git |
+| Sammy R. Ditanongun | slyoh26 | https://github.com/slyoh26/CSC181.git |
+| Jeric I. Balos | JekoBot | https://github.com/JekoBot/CSC181 |
 | [Full name] | [Username] | [Repository link] |
 
 <!-- Add rows for all members. -->
@@ -23,8 +23,15 @@ or an assumption.]
 
 | Member | Problem or inconvenience | Who experiences it? | Current approach | Basis of the idea |
 |---|---|---|---|---|
-| [Name] | [Idea 1] | [Group] | [Approach] | [Basis] |
-| [Name] | [Idea 2] | [Group] | [Approach] | [Basis] |
+| Juniezsa Cassandra C. Bacus | People do not know when and if there is still jeepneys available that goes in a specific route | Commuters | Go to the area that jeepneys ally and find out if there are still jeepneys around | Personal Experience, Direct Observation |
+| Juniezsa Cassandra C. Bacus | The availability of large spaces (e.g. gym, basketball court, plaza) in Iligan is limited. Finding an area to practice or hold a meeting is hard for students and performers especially when it's project/competition season. This results to wasted time and sometimes not finding an area to practice  | Students and Performers | Go to the area to find out if it is full, have someone check it, or remember if a group already "claimed" the area for their practices | Personal Experience, Direct Observation |
+
+| Jeric I. Balos | Real estate transactions rely heavily on word of mouth recommendations, leading to limited reach and biased advice | Property Sellers/Buyers | Buyers rely on personal connections and inquiring in neighborhoods, while the sellers depend on spreading news through referrals | Personal Experience/ Observation |
+| Jeric I. Balos | Home-based caterers and platter businesses lack a dedicated platform to showcase fixed-portion menus, manage advance pre-orders, and secure upfront deposits automatically | Food Platter Vendors and Customers | Sellers rely on Facebook page posts, Messenger DMs and manual calendar tracking, leading to double bookings and lost order details | Personal Experience, Direct Observation |
+
+| Sammy R. Ditanongun | Treasurers may struggle to know who has paid because records are in messages, spreadsheets and paper.  | Treasurers and Student Council members | Google Forms | Student Council Fees |
+| Sammy R. Ditanongun | Sari-sari store owners may lose track of who owes what because balances are kept in notebooks.  | store owners and customers | Notebooks/Written | Observation |
+| Sammy R. Ditanongun | Students may miss or crunch deadlines because assignments, quizzes and project dates are announced across several group chats, during lectures, Google Classroom, or MOLE with no single view of how heavy a given week is. | Students, class officers, instructors of IIT | The current approach involves announcements through group chats in messenger | Observation on our block |
 
 ## 2. Candidate Comparison and Selection
 
@@ -32,9 +39,9 @@ or an assumption.]
 
 | Candidate problem | Why it matters | Feasibility concerns | Access to potential stakeholders |
 |---|---|---|---|
-| [Candidate 1] | [Benefit] | [Concerns] | [Access] |
-| [Candidate 2] | [Benefit] | [Concerns] | [Access] |
-| [Candidate 3] | [Benefit] | [Concerns] | [Access] |
+| Catering and Platter Service PreOrder Platform | Simplifies Bulk Ordering for events, eliminates the need for customers to find sellers in a facebook group, and providing a proof of validity for sellers that customers can trust | hard to implement a system that protects the sellers, i.e customers backing out] | High access via local Facebook food groups, home caterers, event organizers, and student organizations in the community. |
+| Study and assignment tracker for a class  | Students may miss or cram deadlines because activities/deadlines/exams are announced through different sorts of platforms. An app featuring a share board would address this problem with a weekly workload view which could help students plan ahead. It also helps Block Representatives spot weeks with heavy workloads.   | MOLE already displays the deadlines of some of the activities if it is posted in MOLE. Our team needs to identify what it doesn’t cover. For example, announcements from other platforms are not posted in MOLE. Data accuracy will mostly depend on the block representatives adding the information/deadlines and the blockmates confirming the entries. The workload and app’s features fit within the semester's timeline  | High access to stakeholders as most would be seen in MSU-IIT such as: students, block representatives, and professors |
+| Space and Venue Reservation for Practices | Prevents wasted travel time for practice goers, and helps dancers/performers find a vacant practice venue during peak seasons | This will require cooperation from venue owners to maintain an accurate real time ledger for bookings | Direct access to dancers due to personal connections of a group member|
 
 ### Selected problem
 
@@ -213,3 +220,5 @@ upload the same Markdown file to their personal CSC181 repository.
 - [ ] Each member saved the file as `activities/project-proposal.md`.
 - [ ] Each member committed and pushed their copy to their personal repository.
 - [ ] Each member submitted their own GitHub file link through MOLE.
+
+
