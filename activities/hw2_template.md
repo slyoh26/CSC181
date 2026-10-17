@@ -31,7 +31,7 @@ or an assumption.]
 
 | Sammy R. Ditanongun | Treasurers may struggle to know who has paid because records are in messages, spreadsheets and paper.  | Treasurers and Student Council members | Google Forms | Student Council Fees |
 | Sammy R. Ditanongun | Sari-sari store owners may lose track of who owes what because balances are kept in notebooks.  | store owners and customers | Notebooks/Written | Observation |
-| Sammy R. Ditanongun | Students may miss or crunch deadlines because assignments, quizzes and project dates are announced across several group chats, during lectures, Google Classroom, or MOLE with no single view of how heavy a given week is. | Students, class officers, instructors of IIT | The current approach involves announcements through group chats in messenger | Observation on our block |
+| Sammy R. Ditanongun | Students may miss or cram deadlines because assignments, quizzes and project dates are announced across several group chats, during lectures, Google Classroom, or MOLE with no single view of how heavy a given week is. | Students, class officers, instructors of IIT | The current approach involves announcements through group chats in messenger | Observation on our block |
 
 | Amil H. Popawan | Local second-hand book and study material sellers (students and alumni) struggle to reach target buyers within the campus community, leading to unused textbooks piling up or being sold at unfair scrap prices. | College students, alumni, and incoming freshmen | Posting on active Facebook Buy/Sell groups, Messenger chats, or asking friends directly | Personal Experience, Direct Observation |
 | Amil H. Popawan | Boarding house and apartment seekers in Iligan find it difficult to check available rooms, rental rates, and amenities without manually walking around barangays or relying on outdated Facebook posts. | Students, young professionals, and transferees | Physically visiting neighborhoods to look for "Room Available" signages or posting inquiries in general local Facebook groups | Personal Experience, Direct Observation |
@@ -98,21 +98,26 @@ The primary users/stakeholders will be the students and block representatives wh
 
 1. Users can view a dynamic weekly schedule that updates with announcements that entail a change in schedule. This will make it easier to anticipate heavy workload periods and make it easier to spot free schedules during a particular class.
 2. Users can create dedicated spaces for themselves. An example of this would be a block representative creating a space that only their blockmates can join. 
-3. [Capability 3]
+3. Block representatives can post announcements or deadlines with its subject, type (quiz, exam, report, group project) and a weight (light, medium, heavy). Block representatives may also assign additional members to post these deadlines when he’s not available.
+4. Students may join a society depending on their college and announcements from that society will also be reflected in the app.
 
 ### Out-of-scope capabilities
 
 [Identify at least three features, integrations, services, or settings
 excluded from this semester's version.]
 
-1. [Exclusion 1]
-2. [Exclusion 2]
-3. [Exclusion 3]
+1. MOLE integration would be hard since the team would need to have permission to automatically pull deadlines from the website.
+2. Grade tracking or grade calculation will not be part of this app as they are personal datas.
+3. Group chat or messaging features will not be included as this will just duplicate messenger.
 
 ### Expected deliverables
 
-[List the planned outputs, such as a working prototype, documentation,
-and testing evidence.]
+Working prototype of PounceBoard.
+Demo data to test the app's features. Using fictional subjects, deadlines section/block members etc.
+Source code in the team’s repository.
+User documentation, a short guide for how to use the app.
+Testing of the in-scope capabilities, plus a small usability test with classmates.
+Final presentation of demo.
 
 ### Constraints
 
@@ -120,8 +125,9 @@ and testing evidence.]
 
 | Constraint | Effect on the project | How the team will respond |
 |---|---|---|
-| [Constraint 1] | [Effect] | [Response] |
-| [Constraint 2] | [Effect] | [Response] |
+| Time and work pressure | The team may not be able to build every feature it can think of. And busy weeks with exams or other activities from other subjects may hinder the project’s progress | Build the core features first (board creation, weighted deadlines, workload view) and treat extra features such as reminders and calendar export as optional. Set weekly checkpoints to track the progress effectively and track delays.  |
+| Limited access to MOLE and school systems  | The app cannot pull deadlines automatically, so every entry has to be typed in by users.  | Keep MOLE integration out of scope, and make adding a deadline quick (few fields, sensible defaults). Add the confirm-or-correct feature so the section can catch mistakes. |
+| Team skills are limited and still developing/learning | Implementing some of the technologies or features may take longer than usual since the team is still learning it. | Use tools that the team is familiar with and split the tasks by each member’s strengths and weaknesses. Build a simple version of the app first with the core features. |
 
 ### Assumptions and dependencies
 
@@ -139,8 +145,8 @@ Do not report results that have not been collected.]
 
 | Success indicator | Proposed evaluation method |
 |---|---|
-| [Indicator 1] | [Method] |
-| [Indicator 2] | [Method] |
+| The weekly workload view correctly flags busy weeks, and users understand the warning.  | Load the demo dataset with weeks you already know are heavy (for example, a quiz, a report, and a group project due in the same week) and weeks that are light. Check if the app flags the heavy weeks and not the light ones. Then ask testers to explain in their own words what the warning means, and note any confusion.  |
+| A student can find everything due this week, across all subjects, from the prototype without searching group chats or MOLE.  | Test the app with 5-8 users, have them use a fictional section/block board and ask them to list the week’s deadlines using only the app. Record whether each one finds all items correctly and how long it takes, then compare against how long it takes them to find the same information in their usual way.   |
 
 ## 6. Review and Next Steps
 
