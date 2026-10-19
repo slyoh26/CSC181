@@ -41,9 +41,7 @@ or an assumption.]
 | Candidate problem | Why it matters | Feasibility concerns | Access to potential stakeholders |
 |---|---|---|---|
 | Catering and Platter Service PreOrder Platform | Simplifies Bulk Ordering for events, eliminates the need for customers to find sellers in a facebook group, and providing a proof of validity for sellers that customers can trust | hard to implement a system that protects the sellers, i.e customers backing out] | High access via local Facebook food groups, home caterers, event organizers, and student organizations in the community. |
-
 | Study and assignment tracker for a class  | Students may miss or cram deadlines because activities/deadlines/exams are announced through different sorts of platforms. An app featuring a share board would address this problem with a weekly workload view which could help students plan ahead. It also helps Block Representatives spot weeks with heavy workloads.   | MOLE already displays the deadlines of some of the activities if it is posted in MOLE. Our team needs to identify what it doesn’t cover. For example, announcements from other platforms are not posted in MOLE. Data accuracy will mostly depend on the block representatives adding the information/deadlines and the blockmates confirming the entries. The workload and app’s features fit within the semester's timeline  | High access to stakeholders as most would be seen in MSU-IIT such as: students, block representatives, and professors |
-
 | Space and Venue Reservation for Practices | Prevents wasted travel time for practice goers, and helps dancers/performers find a vacant practice venue during peak seasons | This will require cooperation from venue owners to maintain an accurate real time ledger for bookings | Direct access to dancers due to personal connections of a group member|
 
 ### Selected problem
