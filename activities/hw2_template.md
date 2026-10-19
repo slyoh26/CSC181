@@ -2,7 +2,7 @@
 
 ## Team Information
 
-- Team name: RENEview ba? 
+- Team name: RENEview
 - Working arrangement: Personal Computers
 - Coordination method: Group Chat, Google Document
 
@@ -25,14 +25,11 @@ or an assumption.]
 |---|---|---|---|---|
 | Juniezsa Cassandra C. Bacus | People do not know when and if there is still jeepneys available that goes in a specific route | Commuters | Go to the area that jeepneys ally and find out if there are still jeepneys around | Personal Experience, Direct Observation |
 | Juniezsa Cassandra C. Bacus | The availability of large spaces (e.g. gym, basketball court, plaza) in Iligan is limited. Finding an area to practice or hold a meeting is hard for students and performers especially when it's project/competition season. This results to wasted time and sometimes not finding an area to practice  | Students and Performers | Go to the area to find out if it is full, have someone check it, or remember if a group already "claimed" the area for their practices | Personal Experience, Direct Observation |
-
 | Jeric I. Balos | Real estate transactions rely heavily on word of mouth recommendations, leading to limited reach and biased advice | Property Sellers/Buyers | Buyers rely on personal connections and inquiring in neighborhoods, while the sellers depend on spreading news through referrals | Personal Experience/ Observation |
 | Jeric I. Balos | Home-based caterers and platter businesses lack a dedicated platform to showcase fixed-portion menus, manage advance pre-orders, and secure upfront deposits automatically | Food Platter Vendors and Customers | Sellers rely on Facebook page posts, Messenger DMs and manual calendar tracking, leading to double bookings and lost order details | Personal Experience, Direct Observation |
-
 | Sammy R. Ditanongun | Treasurers may struggle to know who has paid because records are in messages, spreadsheets and paper.  | Treasurers and Student Council members | Google Forms | Student Council Fees |
 | Sammy R. Ditanongun | Sari-sari store owners may lose track of who owes what because balances are kept in notebooks.  | store owners and customers | Notebooks/Written | Observation |
 | Sammy R. Ditanongun | Students may miss or cram deadlines because assignments, quizzes and project dates are announced across several group chats, during lectures, Google Classroom, or MOLE with no single view of how heavy a given week is. | Students, class officers, instructors of IIT | The current approach involves announcements through group chats in messenger | Observation on our block |
-
 | Amil H. Popawan | Local second-hand book and study material sellers (students and alumni) struggle to reach target buyers within the campus community, leading to unused textbooks piling up or being sold at unfair scrap prices. | College students, alumni, and incoming freshmen | Posting on active Facebook Buy/Sell groups, Messenger chats, or asking friends directly | Personal Experience, Direct Observation |
 | Amil H. Popawan | Boarding house and apartment seekers in Iligan find it difficult to check available rooms, rental rates, and amenities without manually walking around barangays or relying on outdated Facebook posts. | Students, young professionals, and transferees | Physically visiting neighborhoods to look for "Room Available" signages or posting inquiries in general local Facebook groups | Personal Experience, Direct Observation |
 
@@ -79,12 +76,12 @@ Anticipated needs are not confirmed feedback.]
 
 | Stakeholder role/group | Relationship to the project | Likely need or concern | Question to ask | Possible consultation method |
 |---|---|---|---|---|
-| Students | Primary End User | Uses the channel to track down and be updated of their exam, quiz, and activity deadlines | [Question] | [Method] |
-| Block Representative | Second User/ Operator | A channel to input the data (e.g. deadline, type of deadline, where to pass) only in the block channel | [Question] | [Method] |
-| Instructor | Operator/ Regulator/ Partner | Concern: Has to use 2 or more channels for their announcement, upload files, assignments, and another just for the deadline tracker | [Question] | [Method] |
-| Student Council/Society Officers | Operator | Can input data for events to a multiple block/class instead of just one channel | [Question] | [Method] |
+| Students | Primary End User | Uses the channel to track down and be updated of their exam, quiz, and activity deadlines | How do you keep updated and track your deadlines? | Interview and Observation |
+| Block Representative | Second User/ Operator | A channel to input the data (e.g. deadline, type of deadline, where to pass) only in the block channel | How do you announce the deadlines and where do you get the information from? | Interview and Observation |
+| Instructor | Operator/ Regulator/ Partner | Concern: Has to use 2 or more channels for their announcement, upload files, assignments, and another just for the deadline tracker | How and What platforms do you use to announce the activities, exams, and quizzes? | Interview and Observation |
+| Student Council/Society Officers | Operator | A channel/platform that reaches each student in the college to announce events and important matters | What and how many platforms do you use to announce events and important matters?| Interview and Observation |
 
-Stakeholder-count explanation, if needed: [Explanation or Not applicable.]
+Stakeholder-count explanation, if needed: The stakeholders that are mentioned are mostly the ones that will use the shared tracker. 
 
 ## 5. Initial Scope
 
@@ -107,7 +104,7 @@ The primary users/stakeholders will be the students and block representatives wh
 excluded from this semester's version.]
 
 1. MOLE integration would be hard since the team would need to have permission to automatically pull deadlines from the website.
-2. Grade tracking or grade calculation will not be part of this app as they are personal datas.
+2. Grade tracking or grade calculation will not be part of this app as they are personal data.
 3. Group chat or messaging features will not be included as this will just duplicate messenger.
 
 ### Expected deliverables
@@ -135,8 +132,8 @@ Final presentation of demo.
 
 | Assumption or dependency | Why it matters | How to check or address it |
 |---|---|---|
-| [Item 1] | [Importance] | [Check/action] |
-| [Item 2] | [Importance] | [Check/action] |
+| MOLE, group chats, and in-class announcements make it difficult for students to stay on top of deadlines. | The app depends on the assumption that students have a hard time checking or keeping up-to-date with deadlines, and announcements. If not, there is no problem to be solved by the tracker/app.| Ask 5-8 blockmates how often they miss announcements or are surprised by one. |
+| Not all announcements or deadlines are posted via MOLE | This assumes that not everything is posted in MOLE. If it is already posted in MOLE, then the app serves no purpose since MOLE displays the deadlines but with lacking features | Check if all subjects use MOLE to post their announcements, deadlines, or activities. |
 
 ### Success indicators
 
@@ -148,23 +145,27 @@ Do not report results that have not been collected.]
 | The weekly workload view correctly flags busy weeks, and users understand the warning.  | Load the demo dataset with weeks you already know are heavy (for example, a quiz, a report, and a group project due in the same week) and weeks that are light. Check if the app flags the heavy weeks and not the light ones. Then ask testers to explain in their own words what the warning means, and note any confusion.  |
 | A student can find everything due this week, across all subjects, from the prototype without searching group chats or MOLE.  | Test the app with 5-8 users, have them use a fictional section/block board and ask them to list the week’s deadlines using only the app. Record whether each one finds all items correctly and how long it takes, then compare against how long it takes them to find the same information in their usual way.   |
 
+Here is section 6. Review and Next Steps filled out based on the context of your proposal:
 ## 6. Review and Next Steps
 
 ### Change made after reviewing the proposal
 
-- Before review: [Original idea or scope]
-- After review: [Revised idea or scope]
-- Reason: [Why the change improves clarity, feasibility, or usefulness]
+- Before review: An assignment, project, quiz tracker.
+- After review: Expanded into a shared block board featuring a weighted weekly workload view, calendar view, schedule change updates, and society-level announcement integration.
+- Reason: Focusing solely on a simple deadline checklist overlaps too heavily with existing personal task apps. Adding a section-wide shared board with dynamic workload indicators directly solves the issue of overlapping heavy deadlines across subjects while giving block representatives a single point of truth.
 
 ### Biggest remaining risk
 
-[Identify the assumption, dependency, or limitation that could most affect the project.]
+Data accuracy and adoption risk. Since automatic integration with MOLE and Google Classroom is currently out of scope due to limited access, the system relies entirely on block representatives and professors to manually input and maintain deadline data accurately and promptly.
 
 ### Three unanswered questions
 
-1. [Question 1]
-2. [Question 2]
-3. [Question 3]
+1. What specific features or announcement types exist in group chats and in-class announcements that MOLE fails to capture or organize effectively?
+2. How do instructors and block representatives currently handle sudden schedule changes (e.g., unexpected shifts to asynchronous classes or open lab times), and what is the fastest way for them to broadcast these updates in the app?
+3. How will the app handle verification or moderation if a student submits a wrong or fake deadline entry on a shared block board?
+
+
+
 
 ## 7. Member Contribution Record
 
@@ -173,34 +174,23 @@ drafting, checking feasibility, and reviewing the final document.]
 
 | Member | Ideas or analysis contributed | Drafting or review contribution |
 |---|---|---|
-| [Name] | [Contribution] | [Contribution] |
-| [Name] | [Contribution] | [Contribution] |
+| Jeric I. Balos | Contributed two ideas listed above and participated in discussions regarding the final decision of the selection of the final problem, weighing its pros and cons compared to the other ideas listed. | Handled the writing of the proposed user and setting section of the paper, as well as added some of the capabilities a user can perform on the app. |
+| Juniezsa Cassandra C. Bacus | - Contributed two ideas for the selection and discussions for the final 3 decision and final final decision. - Expanded the scope of the final problem, to include the weekly calendar. -   | Stakeholder List |
+| Sammy R. Ditanongun | Contributed app ideas, Expanded the shortlisted problem that was then picked as the main app. Worked on the constraints, In&out scope, expected deliverables, constraints, assumptions, and success indicators. | Contributed ideas. |
+| Amil H. Popawan | Contributed two problems to be used for the proposal | |
 
 ## 8. References
 
-[List external sources used. Write None if no external sources were used.]
+None
 
 ## 9. Team AI Use Declaration
 
 Select one option:
 
-- [ ] No generative AI tools were used by any member in preparing this submission.
+- [x] No generative AI tools were used by any member in preparing this submission.
 - [ ] One or more members used generative AI tools. Details are provided below.
 
-[If AI was used, complete the table. If not, write Not applicable.]
-
-| Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
-|---|---|---|---|
-| [Name] | [Tool] | [Purpose/sections] | [Review process] |
-
-### Main prompts or interaction summary
-
-[Provide the main prompts or a clear summary of the assistance received.
-Write Not applicable if no AI tools were used.]
-
-We acknowledge that AI-generated suggestions are not evidence of actual
-stakeholder interviews, feedback, or verified community needs. We remain
-responsible for the accuracy and explainability of this submission.
+Not Applicable
 
 ## 10. Team Confirmation
 
@@ -210,24 +200,25 @@ upload the same Markdown file to their personal CSC181 repository.
 
 | Member | Reviewed final version |
 |---|---|
-| [Name] | [Yes/No] |
-| [Name] | [Yes/No] |
-
+| Jeric I. Balos | Yes |
+| Jay Amil Popawan | Yes |
+| Sammy R. Ditanongun | Yes |
+| Juniezsa Cassandra C. Bacus | Yes |
 ## Submission Checklist
 
-- [ ] Each member contributed at least two problem ideas.
-- [ ] Three candidate problems were compared.
-- [ ] The selection rationale is included.
-- [ ] The problem statement contains 100–150 words.
-- [ ] The proposed solution is included.
-- [ ] Relevant stakeholders and consultation questions are identified.
-- [ ] The scope contains 3–5 capabilities and at least three exclusions.
-- [ ] Constraints, assumptions, and success indicators are included.
-- [ ] A review change and three unanswered questions are documented.
-- [ ] Contributions, references, and AI use are declared.
-- [ ] All members reviewed the same final document.
-- [ ] Each member saved the file as `activities/project-proposal.md`.
-- [ ] Each member committed and pushed their copy to their personal repository.
-- [ ] Each member submitted their own GitHub file link through MOLE.
+- [x] Each member contributed at least two problem ideas.
+- [x] Three candidate problems were compared.
+- [x] The selection rationale is included.
+- [x] The problem statement contains 100–150 words.
+- [x] The proposed solution is included.
+- [x] Relevant stakeholders and consultation questions are identified.
+- [x] The scope contains 3–5 capabilities and at least three exclusions.
+- [x] Constraints, assumptions, and success indicators are included.
+- [x] A review change and three unanswered questions are documented.
+- [x] Contributions, references, and AI use are declared.
+- [x] All members reviewed the same final document.
+- [x] Each member saved the file as `activities/project-proposal.md`.
+- [x] Each member committed and pushed their copy to their personal repository.
+- [x] Each member submitted their own GitHub file link through MOLE.
 
 
