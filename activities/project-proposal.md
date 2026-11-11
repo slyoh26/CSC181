@@ -143,7 +143,6 @@ Do not report results that have not been collected.]
 | The weekly workload view correctly flags busy weeks, and users understand the warning.  | Load the demo dataset with weeks you already know are heavy (for example, a quiz, a report, and a group project due in the same week) and weeks that are light. Check if the app flags the heavy weeks and not the light ones. Then ask testers to explain in their own words what the warning means, and note any confusion.  |
 | A student can find everything due this week, across all subjects, from the prototype without searching group chats or MOLE.  | Test the app with 5-8 users, have them use a fictional section/block board and ask them to list the week’s deadlines using only the app. Record whether each one finds all items correctly and how long it takes, then compare against how long it takes them to find the same information in their usual way.   |
 
-Here is section 6. Review and Next Steps filled out based on the context of your proposal:
 ## 6. Review and Next Steps
 
 ### Change made after reviewing the proposal
