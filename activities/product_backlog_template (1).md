@@ -110,174 +110,228 @@ The criteria below use observable outcomes. Each story has at least three criter
 
 ### US-01: View the section board
 
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] Given a student is a member of a section board, when the student opens the board, then the system displays the entries belonging to that section.
 - [ ] Each displayed entry shows its title, subject, type, due date and time, and workload weight when those fields are present.
 - [ ] (unhappy) Given a student is not a member of a section board, when the student attempts to open its restricted board, then the system denies access and displays an access message.
 
-*Scenario 1: Member views the board*
-
-gherkin
-Given a student is a member of the "BSCS-2A" section board
-And the board contains "Calculus Quiz" for November 13, 2026 at 9:00 AM
-When the student opens the "BSCS-2A" board
-Then the system displays "Calculus Quiz" with its subject and due date
-
-*Scenario 2: Non-member is blocked (unhappy)*
-
-gherkin
-Given a student is not a member of the "BSCS-2A" section board
-When the student attempts to open that board
-Then the system denies access
-And the system displays an access message
-
 ### US-02: Create a section board
 
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] Given an authorized user has entered a valid section name, when the user submits the create-board form, then the system creates one board with that section name.
 - [ ] The user who creates the board is recorded as its initial board manager.
 - [ ] (unhappy) Given the section name is blank, when the user submits the form, then the system does not create a board and identifies the required field.
 
-*Scenario 1: Valid board is created*
+### US-03: Add a deadline or announcement entry
 
-gherkin
-Given an authorized user is on the create-board page
-When the user enters "BSCS-2A" as the section name and submits the form
-Then the system creates the "BSCS-2A" board
-And records the creator as its initial board manager
+**Acceptance criteria:**
 
-*Scenario 2: Required section name is missing (unhappy)*
+- [ ] The entry form requires a title, subject, type, due date and time, and workload weight.
+- [ ] Given all required fields contain valid values, when an authorized poster saves the entry, then the entry appears on the correct section board with the submitted details.
+- [ ] (unhappy) Given a required field is missing or the date/time value is invalid, when the poster submits the form, then the system does not save the entry and identifies the field that needs correction.
 
-gherkin
-Given an authorized user is on the create-board page
-When the user submits the form without a section name
-Then the system does not create a board
-And displays a message that the section name is required
+### US-04: View calendar and task list
 
-### US-03: View calendar and task list
-
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] The student can switch between a calendar view and a task-list view of the same section entries.
 - [ ] Entries in the calendar appear on their saved due dates, and task-list entries display their due date and time.
 - [ ] (unhappy) Given the selected section has no entries for the displayed period, when the student opens the view, then the system displays an empty-state message instead of misleading or unrelated entries.
 
-*Scenario 1: Student switches views*
+### US-05: Mark an entry as completed
 
-gherkin
-Given the section board contains "Physics Report" due November 14, 2026
-When the student opens the calendar view
-Then "Physics Report" appears on November 14, 2026
-When the student switches to the task-list view
-Then "Physics Report" appears with the same due date
-
-*Scenario 2: Selected period has no entries (unhappy)*
-
-gherkin
-Given the selected week has no saved section entries
-When the student opens the calendar view for that week
-Then the system displays an empty-state message
-And does not display entries from another section
-
-### US-04: Mark an entry as completed
-
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] Given an entry is not completed, when the student marks it as completed, then the interface displays its completed status.
 - [ ] The completed status remains visible when the student changes between the calendar and task-list views.
 - [ ] (unhappy) Given an entry cannot be found or is no longer available, when the student attempts to mark it complete, then the system displays an error and does not change another entry.
 
-*Scenario 1: Student marks an entry as completed*
+### US-06: Edit an entry and show its status
 
-gherkin
-Given the "Physics Report" entry is not completed
-When the student marks it as completed
-Then the interface displays its completed status
-And the completed status remains visible after the student switches
-from the calendar view to the task-list view
+**Acceptance criteria:**
 
-*Scenario 2: Entry is no longer available (unhappy)*
+- [ ] An authorized poster can edit the title, subject, type, due date/time, workload weight, and optional details of an existing entry.
+- [ ] When a saved entry's deadline changes, the board displays the latest saved deadline and the selected status label, such as Updated or Extended.
+- [ ] (unhappy) Given a user without posting permission attempts to edit an entry, when the user submits the change, then the system rejects the change and leaves the saved entry unchanged.
 
-gherkin
-Given the "Physics Report" entry has been removed from the board
-When the student attempts to mark it as completed
-Then the system displays an error
-And does not change any other entry
+### US-07: Submit a suggested entry or correction
 
-### US-05: View weekly workload
+**Acceptance criteria:**
 
-*Acceptance criteria:*
+- [ ] A student can submit a proposed entry or correction with a description of the suggested information.
+- [ ] After submission, the system records the suggestion as pending and makes it available to an authorized representative for review.
+- [ ] (unhappy) Given the suggestion has no description, when the student submits it, then the system rejects the submission and identifies the missing information.
+
+### US-08: Approve or reject a suggestion
+
+**Acceptance criteria:**
+
+- [ ] An authorized representative can view pending suggestions for the representative's section board.
+- [ ] When the representative approves a valid suggestion, the system applies the proposed change to the board and changes the suggestion's status to Approved.
+- [ ] (unhappy) When the representative rejects a suggestion, the system does not apply the proposed change and records the suggestion as Rejected.
+
+### US-09: View weekly workload
+
+**Acceptance criteria:**
 
 - [ ] The weekly view groups section entries by their due dates within the selected week.
 - [ ] The workload summary uses the saved Light, Medium, and Heavy weights of entries in that week.
 - [ ] (unhappy) Given the selected week has no entries, when the student opens the workload view, then the system displays a no-upcoming-requirements message and does not label the week as busy.
 
-*Scenario 1: Busy week is summarized*
+### US-10: Assign another poster
 
-gherkin
-Given the selected week contains one Light entry, one Medium entry,
-and two Heavy entries
-When the student opens the weekly workload view
-Then the system lists the four entries under their due dates
-And displays a workload summary based on their saved weights
-
-*Scenario 2: Week has no entries (unhappy)*
-
-gherkin
-Given the selected week contains no section entries
-When the student opens the weekly workload view
-Then the system displays a no-upcoming-requirements message
-And does not mark the week as busy
-
-### US-06: Assign another poster
-
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] An authorized representative can select a member of the same section and grant that member posting permission.
 - [ ] A member with posting permission can create and edit entries on that section board.
 - [ ] (unhappy) A student without board-management permission cannot grant posting permission to another member.
 
-*Scenario 1: Posting permission is granted*
+### US-11: Join a society board
 
-gherkin
-Given an authorized representative is managing the "BSCS-2A" section board
-And "Maria Santos" is a member of the "BSCS-2A" section
-When the representative grants Maria posting permission
-Then the system saves the permission
-And Maria can create and edit entries on the "BSCS-2A" board
+**Acceptance criteria:**
 
-*Scenario 2: Student without management permission cannot grant access (unhappy)*
+- [ ] A student can view the list of society boards made available in the system.
+- [ ] When a student joins an available society board, that board's announcements become visible to the student.
+- [ ] (unhappy) When a society board is restricted and the student is not an approved member, the system denies access to its restricted announcements.
 
-gherkin
-Given a student is a member of the "BSCS-2A" board without board-management permission
-When the student attempts to grant "Maria Santos" posting permission
-Then the system denies the action
-And Maria's permissions remain unchanged
+### US-12: Open an entry's reference link
 
-### US-07: Open an entry's reference link
-
-*Acceptance criteria:*
+**Acceptance criteria:**
 
 - [ ] When an entry contains a valid reference link, the student can select it to open the linked resource.
 - [ ] When an entry has no reference link, the system does not display a non-functional link control.
 - [ ] (unhappy) When a saved reference link is malformed or cannot be opened, the system displays an error or unavailable-link message without changing the entry.
 
-*SScenario 1: Valid link opens the resource*
+### Given–When–Then scenarios for Must-have stories
 
-gherkin
-Given the "Calculus Quiz" entry has a valid reference link
-When the student selects the reference link
-Then the system opens the linked resource
+The proposed Must-have stories are US-01, US-02, US-03, US-04, US-06, and US-09. The team should confirm this priority set during planning.
 
-*Scenario 2: Saved link is malformed or unavailable (unhappy)*
+#### US-01: View the section board
 
-gherkin
-Given the "Physics Report" entry has a malformed reference link
-When the student selects the reference link
-Then the system displays an unavailable-link message
-And the entry remains unchanged
+**Scenario 1: Member views the board**
+
+```gherkin
+Given a student is a member of the "BSCS-2A" section board
+And the board contains "Calculus Quiz" for November 13, 2026 at 9:00 AM
+When the student opens the "BSCS-2A" board
+Then the system displays "Calculus Quiz" with its subject and due date
+```
+
+**Scenario 2: Non-member is blocked (unhappy)**
+
+```gherkin
+Given a student is not a member of the "BSCS-2A" section board
+When the student attempts to open that board
+Then the system denies access
+And the system displays an access message
+```
+
+#### US-02: Create a section board
+
+**Scenario 1: Valid board is created**
+
+```gherkin
+Given an authorized user is on the create-board page
+When the user enters "BSCS-2A" as the section name and submits the form
+Then the system creates the "BSCS-2A" board
+And records the creator as its initial board manager
+```
+
+**Scenario 2: Required section name is missing (unhappy)**
+
+```gherkin
+Given an authorized user is on the create-board page
+When the user submits the form without a section name
+Then the system does not create a board
+And displays a message that the section name is required
+```
+
+#### US-03: Add a deadline or announcement entry
+
+**Scenario 1: Valid entry is saved**
+
+```gherkin
+Given a block representative manages the "BSCS-2A" board
+When the representative enters "Calculus Quiz", "MAT061", "Quiz",
+"November 13, 2026 at 9:00 AM", and "Medium"
+And submits the entry
+Then the system saves the entry to the "BSCS-2A" board
+And displays the submitted details to board members
+```
+
+**Scenario 2: Missing required field (unhappy)**
+
+```gherkin
+Given a block representative is creating an entry
+When the representative leaves the subject field blank and submits the form
+Then the system does not save the entry
+And identifies the subject field as required
+```
+
+#### US-04: View calendar and task list
+
+**Scenario 1: Student switches views**
+
+```gherkin
+Given the section board contains "Physics Report" due November 14, 2026
+When the student opens the calendar view
+Then "Physics Report" appears on November 14, 2026
+When the student switches to the task-list view
+Then "Physics Report" appears with the same due date
+```
+
+**Scenario 2: Selected period has no entries (unhappy)**
+
+```gherkin
+Given the selected week has no saved section entries
+When the student opens the calendar view for that week
+Then the system displays an empty-state message
+And does not display entries from another section
+```
+
+#### US-06: Edit an entry and show its status
+
+**Scenario 1: Representative extends a deadline**
+
+```gherkin
+Given a block representative manages an entry due November 13, 2026 at 9:00 AM
+When the representative changes the due date to November 15, 2026 at 9:00 AM
+And sets the status to "Extended"
+Then the system saves the new due date
+And displays the "Extended" status on the board
+```
+
+**Scenario 2: Unauthorized edit is rejected (unhappy)**
+
+```gherkin
+Given a student has no posting permission on the section board
+When the student attempts to change an entry's due date
+Then the system rejects the change
+And the original due date remains unchanged
+```
+
+#### US-09: View weekly workload
+
+**Scenario 1: Busy week is summarized**
+
+```gherkin
+Given the selected week contains one Light entry, one Medium entry,
+and two Heavy entries
+When the student opens the weekly workload view
+Then the system lists the four entries under their due dates
+And displays a workload summary based on their saved weights
+```
+
+**Scenario 2: Week has no entries (unhappy)**
+
+```gherkin
+Given the selected week contains no section entries
+When the student opens the weekly workload view
+Then the system displays a no-upcoming-requirements message
+And does not mark the week as busy
+```
 
 ## 5. Quality Requirements and Constraints (EARS)
 
@@ -285,17 +339,17 @@ The interview log does not contain agreed numerical performance targets. Therefo
 
 | ID | Requirement | EARS pattern | Type | Source | Number agreed with |
 |---|---|---|---|---|---|
-| NFR-01 | While a section board is displayed, the system shall show each entry’s due date and time identically in the calendar view and the task-list view. | State-driven | Quality(consistency) | F2, F3, F6 | N/A, proposed by team |
-| NFR-02 | While a section board is displayed, the system shall show each entry’s due date and time identically in the calendar view and the task-list view. | Event-driven | Quality(performance) | F1, F4, F9 | N/A, proposed by team |
-| NFR-03 | TThe system shall allow board creation, official entries, suggestion approval, and posting-permission grants only to users with board-manager permission.	 | Ubiquitous | Constraint / Security | F5, F7, F11 | N/A, proposed by team |
-| NFR-04 | The system shall allow board creation, official entries, suggestion approval, and posting-permission grants only to users with board-manager permission. | Quality | F3, F9 | N/A, proposed by team |
-| NFR-05 | The system shall not require automatic integration with MOLE, Google Classroom, Messenger, Facebook, or Discord in the first release | Ubiquitous | Constraint | F11, F12 | N/A, stated in proposal scope |
+| NFR-01 | While a user is viewing a section board, the system shall display only entries belonging to that board and shall show each entry's saved date and time consistently in the calendar and task-list views. | State-driven | Quality | F2, F3, F6 | N/A, proposed by team |
+| NFR-02 | When an authorized user saves an entry or an edit, the system shall display the saved information on the relevant section board. | Event-driven | Quality | F1, F4, F9 | N/A, proposed by team |
+| NFR-03 | The system shall require authorization before a user can create a board, publish an official entry, approve a suggestion, or grant posting permission. | Ubiquitous | Constraint / Security | F5, F7, F11 | N/A, proposed by team |
+| NFR-04 | When a required entry field is missing or invalid, the system shall identify the field and prevent the incomplete entry from being saved. | Event-driven | Quality | F3, F9 | N/A, proposed by team |
+| NFR-05 | The system shall not require automatic integration with MOLE, Google Classroom, Messenger, Facebook, or Discord in the first release. | Ubiquitous | Constraint | F11, F12 | N/A, stated in proposal scope |
 
 ## 6. Use Case
 
 ### Use-case diagram
 
-mermaid
+```mermaid
 flowchart LR
     Student[Student]
     Rep[Block Representative]
@@ -331,8 +385,9 @@ flowchart LR
     Poster --> UC6
     Poster --> UC7
     SocietyOfficer --> UC11
+```
 
-*Diagram note:* Society announcements (US-11) are a later-release capability. The diagram includes it to show the wider proposed system, not to imply that it belongs in the first-release MVP.
+**Diagram note:** Society announcements (US-11) are a later-release capability. The diagram includes it to show the wider proposed system, not to imply that it belongs in the first-release MVP.
 
 ### UC-01: Add and publish a section deadline
 
@@ -341,7 +396,7 @@ flowchart LR
 | Primary actor | Block representative or authorized additional poster |
 | Precondition | The actor is signed in, has posting permission, and has access to an existing section board. |
 | Main success scenario | 1. The actor opens the section board. 2. The actor selects the option to add an entry. 3. The system displays the entry form. 4. The actor enters the title, subject, type, due date and time, workload weight, and any optional details or reference link. 5. The actor submits the form. 6. The system validates the required fields. 7. The system saves the entry to the selected section board. 8. The system displays the new entry in the board and relevant calendar, task-list, and workload views. |
-| Extensions | *4a. Missing or invalid information:* The actor leaves a required field blank or enters an invalid date/time. The system identifies the field, does not save the entry, and returns the actor to the form. <br> *5a. Actor lacks permission:* The system rejects the attempt to publish and leaves the board unchanged. <br>**6a. Actor cancels:** The system discards the unsaved form and returns to the board. |
+| Extensions | **4a. Missing or invalid information:** The actor leaves a required field blank or enters an invalid date/time. The system identifies the field, does not save the entry, and returns the actor to the form. **5a. Actor lacks permission:** The system rejects the attempt to publish and leaves the board unchanged. **6a. Actor cancels:** The system discards the unsaved form and returns to the board. |
 | Postcondition | A valid entry is saved to the selected board and is visible to its authorized members. No entry is created if validation or authorization fails. |
 | Stories covered | US-03, US-01, US-04, US-09, US-12 |
 
