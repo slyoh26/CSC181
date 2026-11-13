@@ -515,6 +515,11 @@ The team checked the findings and stories against INVEST, the quality checklist,
 
 \[List the lecture slides and external sources used. Write None if no external sources were used.\]
 
+## 15. Team AI Use Declaration
+
+- [ ] No generative AI tools were used by any member in preparing this submission.
+- [x] One or more members used generative AI tools. Details are provided below.
+
 | Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
 |---|---|---|---|
 | Sammy R. Ditanongun | ChatGPT | Helped organize the supplied interview log and project proposal into the product backlog, including findings, assumptions, user stories, acceptance criteria, use case, story map, prioritization, and draft validation sections. | The team must compare every finding against the original interview log and proposal, correct any inaccurate interpretation, confirm estimates and priorities, and replace all pending fields with actual team records. |
