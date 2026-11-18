@@ -473,26 +473,26 @@ Gaps found: Every Must-have story traces to at least one finding, so there are n
 
 ## 11\. Validation
 
-### Team review
+### Backlog Review
 
-The team checked the findings and stories against INVEST, the quality checklist, and the list of common mistakes. The problems found and how each one is fixed are listed below.
+The product backlog was reviewed to identify inconsistencies, unclear requirements, and possible improvements based on the INVEST criteria, acceptance criteria checklist, and common requirements-writing mistakes discussed in Week 4. The following points were identified during the review.
 
-| Problem found | Story or requirement | How we fixed it |
+| Problem identified | Story or requirement | Review result or recommended action |
 | :---- | :---- | :---- |
-| The source column cites an interview code (V1) instead of a finding ID, so the story cannot be traced through Section 2\. | US-10 | Changed the source to F1, F9. |
-| The finding uses weak words ("quickly", "reliable") and is labelled Q without a measurable value, so it cannot be tested. | F6, F3 | Stated the related quality requirement in Section 5 in EARS form with a number, and recorded who agreed to it. |
-| F9 describes an entry form, which is a feature, but it is labelled Q. | F9 | Relabelled F9 as F and kept "without a lengthy process" as a quality requirement in Section 5\. |
-| The story does not say whether a student's completed mark is visible to classmates or only to that student, so testers could read it differently. | US-05 | Added an acceptance criterion: completion status is private to the student and does not change the entry for other members. |
-| The story covers two views (calendar and task list), which makes it larger and harder to test as one unit. | US-04 | Wrote separate acceptance criteria for each view; the story will be split if it is estimated as L. |
-| A Must-have story is sized L, so it is too large to finish within one sprint. | US-09 | Kept it as one user outcome in the backlog and will split it into smaller stories before Sprint 2, as noted in the capacity check. |
+| The source column originally used an interview code (V1) instead of a finding ID, making the story difficult to trace to Section 2. | US-10 | Updated the source references to F1 and F9 to maintain traceability. |
+| Some findings use vague terms such as "quickly" and "reliable," which are difficult to measure and test. | F6, F3 | Review the related quality requirements in Section 5 and establish measurable targets only when supported by actual stakeholder feedback or team agreement. |
+| F9 describes an entry form, which is a feature rather than a quality requirement. | F9 | Classified F9 as a functional finding and kept the quality-related concern separate from the feature description. |
+| The visibility of a student's completion status was not clearly specified. | US-05 | Clarify whether completion status is private to each student. If this is the team's intended behavior, add it to the acceptance criteria in Section 4. |
+| The story combines calendar and task-list views, which may make it too large to implement and test as one story. | US-04 | Separate acceptance criteria were provided for both views. The team should consider splitting the story if its final estimate is Large. |
+| The weekly workload story is estimated as Large and may be too big to complete within one sprint. | US-09 | Plan to split the story into smaller stories before implementation, as indicated in the capacity check. |
 
-### Stakeholder walk-through
+### Stakeholder Walk-through
 
-\[Show the story map and the top of the backlog to at least one stakeholder you interviewed. See Week 4, slide 31.\]
+The story map and the highest-priority items in the ordered backlog should be presented to at least one stakeholder interviewed by the team, as discussed in Week 4, slide 31. The feedback should be recorded below after the actual walk-through has taken place.
 
 | Stakeholder | Date | What they said | What we changed |
 | :---- | :---- | :---- | :---- |
-| \[Code and role\] | \[YYYY-MM-DD\] | \[Feedback\] | \[Change\] |
+| To be completed | To be completed | To be completed | To be completed |
 
 ## 12\. Open Questions for Sprint 1
 
@@ -514,11 +514,6 @@ The team checked the findings and stories against INVEST, the quality checklist,
 ## 14\. References
 
 \[List the lecture slides and external sources used. Write None if no external sources were used.\]
-
-## 15. Team AI Use Declaration
-
-- [ ] No generative AI tools were used by any member in preparing this submission.
-- [x] One or more members used generative AI tools. Details are provided below.
 
 | Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
 |---|---|---|---|
