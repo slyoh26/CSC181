@@ -2,21 +2,21 @@
 
 ## Team Information
 
-- **Team name:** RENEview  
-- **Project title:** PounceBoard  
-- **Primary user group for the first release:** Students belonging to an MSU-IIT class section or block  
+- **Team name:** RENEview
+- **Project title:** PounceBoard
+- **Primary user group for the first release:** Students belonging to an MSU-IIT class section or block
 - **Format:** User stories with one detailed use case and testable acceptance criteria
 
 | Member | GitHub username | Personal CSC181 repository |
-| :---- | :---- | :---- |
-| Juniezsa Cassandra C. Bacus | `fried.ShangHai` | [https\://github.com/Juniezsa/CSC181.git](https://github.com/Juniezsa/CSC181.git) |
-| Sammy R. Ditanongun | `slyoh26` | [https\://github.com/slyoh26/CSC181.git](https://github.com/slyoh26/CSC181.git) |
-| Jeric I. Balos | `JekoBot` | [https\://github.com/JekoBot/CSC181.git](https://github.com/JekoBot/CSC181.git) |
-| Amil H. Popawan | `amillionaire` | [https\://github.com/amillionaire/-CSC181](https://github.com/amillionaire/-CSC181) |
+|---|---|---|
+| Juniezsa Cassandra C. Bacus | fried.ShangHai| https://github.com/Juniezsa/CSC181.git |
+| Sammy R. Ditanongun | slyoh26 | https://github.com/slyoh26/CSC181.git |
+| Jeric I. Balos | JekoBot | https://github.com/JekoBot/CSC181.git |
+| Amil H. Popawan | amillionaire | https://github.com/amillionaire/-CSC181 |
 
-> **Completion note:** The interview log and proposal do not provide interview dates or the names of the team members who conducted each interview. These details are marked **To be supplied by the team** instead of being invented. The same applies to stakeholder validation that is not documented in the supplied files.
+<!-- Add rows for all members. -->
 
-## 1\. Interview Summary
+## 1. Interview Summary
 
 The team gathered input from students, block representatives, and a student organization officer. The interviews show that students currently use several channels to receive announcements and maintain separate personal reminders. Block representatives act as intermediaries between instructors and students, and they sometimes need to repeat or correct information. The student organization officer described how announcements are distributed through Messenger, Facebook, and, for some CS announcements, Discord.
 
@@ -28,7 +28,7 @@ The team gathered input from students, block representatives, and a student orga
 | S2 | Student, 3rd-year BS Environmental Engineering | 11/7/26 | Chat interview | Juniezsa Cassandra C. Bacus |
 | S3 | Student, 4th-year BS ANBIO | 11/7/26 | Chat interview | Juniezsa Cassandra C. Bacus |
 | S4 | Student, 2nd-year BSEd Physics | 11/7/26  | Chat interview | Juniezsa Cassandra C. Bacus |
-| V3 | Block representative | 10/26/26 | Chat interview | Sammy R. DItanongun |
+| V3 | Block representative | 10/26/26 | Chat interview | Sammy R. Ditanongun |
 | S5 | Senior CS student | 11/8/26 | Chat interview | Juniezsa Cassandra C. Bacus |
 
 **Interview coverage:** The log contains at least two stakeholder groups: students and block representatives. It also includes a student organization officer. Instructor announcements are discussed by interviewees, but the log does not contain a separately identified instructor interview. The team should not describe instructors as directly interviewed unless another interview record exists.
@@ -47,7 +47,7 @@ The findings below separate what interviewees said from the needs inferred by th
 | F6 | S1, S2, S3, S4 | Students prefer having information in one place. Most interviewed students said a consolidated view would make checking easier and reduce confusion. | Students need to find information quickly without searching several conversations or websites. | The system shall provide a section-level list of upcoming entries that can be reviewed together across subjects. | Q |
 | F7 | V1, V3, V2 | Representatives and organization officers redistribute updated deadlines or announcements through existing group chats and rely on representatives to pass information along. | Users need updates to be easy to recognize and communicate, while retaining familiar communication channels. | The system shall show the updated entry and its status in the shared board; the prototype will not replace Messenger or provide its own chat. | F |
 | F8 | V1, V3, V2 | Busy periods occur around midterms and finals. Interviewees described several requirements or events happening close together and the need to plan around conflicts. | Students and representatives need an overview of how demanding a week will be. | Each academic requirement shall have a workload weight, and the system shall show a weekly workload view based on the entries recorded. | F |
-| F9 | V1, V3 | Representatives want to add the subject, activity, deadline, and reminders, and one representative described a quick-entry form with a title, subject, due date/time, and link. | Authorized users need to enter and update information without a lengthy process. | The system shall provide an entry form for title, subject, type, due date/time, workload weight, and optional details or link. | Q |
+| F9 | V1, V3 | Representatives want to add the subject, activity, deadline, and reminders, and one representative described a quick-entry form with a title, subject, due date/time, and link. | Authorized users need to enter and update information without a lengthy process. | The system shall provide an entry form for title, subject, type, due date/time, workload weight, and optional details or link. | F |
 | F10 | V2 | The organization officer described using Messenger for small announcements and Facebook for announcements that need wider reach. Discord was also used for some CS-related announcements. | Organization-level announcements may need to reach members through a dedicated space while users retain their preferred communication channels. | The system may support a society or organization board in a later release, subject to a confirmed scope and access rules. | F |
 | F11 | V2, S5 | The organization officer said students have different preferred communication channels. The senior CS student also preferred verification and said platform preference varies. | The system should complement existing channels instead of assuming every student will abandon them. | PounceBoard shall be a shared reference board and shall not require integration with or replacement of Messenger, Facebook, Discord, MOLE, or Google Classroom in the first release. | C |
 | F12 | Proposal, V1, V3 | The proposal states that MOLE integration is outside the semester scope, and interviewees described information coming from several channels. | The first release must work even when information is entered manually. | Authorized users shall manually create and maintain entries; automatic MOLE or Google Classroom importing is excluded from Release 1\. | C |
@@ -64,6 +64,7 @@ These are assumptions or decisions that have not been confirmed by the interview
 | A4 | Representatives can verify student-submitted corrections before they are shown as official updates. | High | Walk through the proposed approval process with representatives and ask who should have approval rights. |
 | A5 | The team can implement the core board, entry management, calendar/task view, and workload summary within the semester. | High | Estimate each story with the team, build a small technical prototype, and review progress at weekly checkpoints. |
 | A6 | Society or organization boards can be added without making the first-release section board too complicated. | Medium | Keep society boards outside the MVP and revisit after the section workflow has been tested. |
+| A7 | A block representative may need to delegate posting permission to another trusted section member. | Medium | Confirm this need with a block representative. If the interview log does not support it, keep US-10 identified as an assumption rather than a confirmed stakeholder need. |
 
 ## 3\. User Stories
 
@@ -74,15 +75,15 @@ These are assumptions or decisions that have not been confirmed by the interview
 | US-01 | As a student, I want to view my section's shared board so that I can check upcoming requirements across my subjects in one place. | F2, F6 | Find section information | Yes |
 | US-02 | As a block representative, I want to create a section board so that members of my block have a shared place for deadlines and announcements. | F1, F2 | Set up a section board | Yes |
 | US-03 | As a block representative, I want to add an entry with its title, subject, type, due date and time, and workload weight so that students receive the important details of a requirement. | F1, F3, F8, F9 | Manage board entries | Yes |
-| US-04 | As a student, I want to view entries in a calendar and task list so that I can understand what is due and when. | F2, F3, F6 | Review deadlines | Yes |
+| US-04 | As a student, I want to view entries in a calendar and task list so that I can understand what is due and when. | F2, F3, F6 | Review deadlines | Review size |
 | US-05 | As a student, I want to mark an entry as completed so that I can keep track of the requirements I have finished. | F3, F6 | Review deadlines | Yes |
 | US-06 | As a block representative, I want to edit an entry and identify it as updated or extended so that students can distinguish the latest information from an earlier deadline. | F4, F7 | Maintain accurate information | Yes |
 | US-07 | As a student, I want to submit a correction or suggested entry so that information that may be missing or incorrect can be brought to the representative's attention. | F5 | Verify board information | Yes |
 | US-08 | As a block representative, I want to approve or reject a submitted correction so that unverified information does not become an official board entry. | F5, F7 | Verify board information | Yes |
-| US-09 | As a student, I want to see a weekly workload overview based on the weight of upcoming requirements so that I can plan ahead for busy weeks. | F8 | Plan weekly workload | Yes |
-| US-10 | As a block representative, I want to assign another trusted member permission to post entries so that the board can still be updated when I am unavailable. | V1, F1, F9 | Manage board access | Yes |
+| US-09 | As a student, I want to see a weekly workload overview based on the weight of upcoming requirements so that I can plan ahead for busy weeks. | F8 | Plan weekly workload | Needs splitting |
+| US-10 | As a block representative, I want to assign another trusted member permission to post entries so that the board can still be updated when I am unavailable. | F1, A7 (assumption) | Manage board access | Yes |
 | US-11 | As a student, I want to join a society board so that I can see announcements relevant to an organization I belong to. | F10, F11 | Society announcements | Yes |
-| US-12 | As a student, I want to open an entry's optional reference link so that I can go to the original instructions or submission page. | F1, F9 | Review deadlines | Yes,  |
+| US-12 | As a student, I want to open an entry's optional reference link so that I can go to the original instructions or submission page. | F1, F9 | Review deadlines | Yes |
 
 ### Epics and how we split them
 
@@ -104,9 +105,9 @@ These are assumptions or decisions that have not been confirmed by the interview
      
 3. **Before:** As a block representative, I want to post announcements so that everyone knows what is happening. **After:** US-03 covers creating a structured deadline entry, while US-06 covers changing an existing entry and identifying its updated status. **Reason:** Adding information and correcting information are separate workflows with different acceptance conditions.
 
-## 4. Acceptance Criteria
+## 4\. Acceptance Criteria
 
-The criteria below use observable outcomes. Each story has at least three criteria, including an unhappy path. Given–When–Then scenarios are included for every Must-have story in the ordered backlog.
+The criteria below use observable outcomes. Each story has at least three criteria, including an unhappy path. Given-When-Then scenarios are included for every Must-have story in the ordered backlog.
 
 ### US-01: View the section board
 
@@ -116,6 +117,24 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] Each displayed entry shows its title, subject, type, due date and time, and workload weight when those fields are present.
 - [ ] (unhappy) Given a student is not a member of a section board, when the student attempts to open its restricted board, then the system denies access and displays an access message.
 
+**Scenario 1: Member views the board**
+
+```gherkin
+Given a student is a member of the "BSCS-2A" section board
+And the board contains "Calculus Quiz" for November 13, 2026 at 9:00 AM
+When the student opens the "BSCS-2A" board
+Then the system displays "Calculus Quiz" with its subject and due date
+```
+
+**Scenario 2: Non-member is blocked (unhappy)**
+
+```gherkin
+Given a student is not a member of the "BSCS-2A" section board
+When the student attempts to open that board
+Then the system denies access
+And the system displays an access message
+```
+
 ### US-02: Create a section board
 
 **Acceptance criteria:**
@@ -123,6 +142,24 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] Given an authorized user has entered a valid section name, when the user submits the create-board form, then the system creates one board with that section name.
 - [ ] The user who creates the board is recorded as its initial board manager.
 - [ ] (unhappy) Given the section name is blank, when the user submits the form, then the system does not create a board and identifies the required field.
+
+**Scenario 1: Valid board is created**
+
+```gherkin
+Given an authorized user is on the create-board page
+When the user enters "BSCS-2A" as the section name and submits the form
+Then the system creates the "BSCS-2A" board
+And records the creator as its initial board manager
+```
+
+**Scenario 2: Required section name is missing (unhappy)**
+
+```gherkin
+Given an authorized user is on the create-board page
+When the user submits the form without a section name
+Then the system does not create a board
+And displays a message that the section name is required
+```
 
 ### US-03: Add a deadline or announcement entry
 
@@ -132,6 +169,26 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] Given all required fields contain valid values, when an authorized poster saves the entry, then the entry appears on the correct section board with the submitted details.
 - [ ] (unhappy) Given a required field is missing or the date/time value is invalid, when the poster submits the form, then the system does not save the entry and identifies the field that needs correction.
 
+**Scenario 1: Valid entry is saved**
+
+```gherkin
+Given a block representative manages the "BSCS-2A" board
+When the representative enters "Calculus Quiz", "MAT061", "Quiz",
+"November 13, 2026 at 9:00 AM", and "Medium"
+And submits the entry
+Then the system saves the entry to the "BSCS-2A" board
+And displays the submitted details to board members
+```
+
+**Scenario 2: Missing required field (unhappy)**
+
+```gherkin
+Given a block representative is creating an entry
+When the representative leaves the subject field blank and submits the form
+Then the system does not save the entry
+And identifies the subject field as required
+```
+
 ### US-04: View calendar and task list
 
 **Acceptance criteria:**
@@ -139,6 +196,25 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] The student can switch between a calendar view and a task-list view of the same section entries.
 - [ ] Entries in the calendar appear on their saved due dates, and task-list entries display their due date and time.
 - [ ] (unhappy) Given the selected section has no entries for the displayed period, when the student opens the view, then the system displays an empty-state message instead of misleading or unrelated entries.
+
+**Scenario 1: Student switches views**
+
+```gherkin
+Given the section board contains "Physics Report" due November 14, 2026
+When the student opens the calendar view
+Then "Physics Report" appears on November 14, 2026
+When the student switches to the task-list view
+Then "Physics Report" appears with the same due date
+```
+
+**Scenario 2: Selected period has no entries (unhappy)**
+
+```gherkin
+Given the selected week has no saved section entries
+When the student opens the calendar view for that week
+Then the system displays an empty-state message
+And does not display entries from another section
+```
 
 ### US-05: Mark an entry as completed
 
@@ -148,6 +224,25 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] The completed status remains visible when the student changes between the calendar and task-list views.
 - [ ] (unhappy) Given an entry cannot be found or is no longer available, when the student attempts to mark it complete, then the system displays an error and does not change another entry.
 
+**Scenario 1: Student marks an entry as completed**
+
+```gherkin
+Given the "Physics Report" entry is not completed
+When the student marks it as completed
+Then the interface displays its completed status
+And the completed status remains visible after the student switches
+from the calendar view to the task-list view
+```
+
+**Scenario 2: Entry is no longer available (unhappy)**
+
+```gherkin
+Given the "Physics Report" entry has been removed from the board
+When the student attempts to mark it as completed
+Then the system displays an error
+And does not change any other entry
+```
+
 ### US-06: Edit an entry and show its status
 
 **Acceptance criteria:**
@@ -155,6 +250,25 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] An authorized poster can edit the title, subject, type, due date/time, workload weight, and optional details of an existing entry.
 - [ ] When a saved entry's deadline changes, the board displays the latest saved deadline and the selected status label, such as Updated or Extended.
 - [ ] (unhappy) Given a user without posting permission attempts to edit an entry, when the user submits the change, then the system rejects the change and leaves the saved entry unchanged.
+
+**Scenario 1: Representative extends a deadline**
+
+```gherkin
+Given a block representative manages an entry due November 13, 2026 at 9:00 AM
+When the representative changes the due date to November 15, 2026 at 9:00 AM
+And sets the status to "Extended"
+Then the system saves the new due date
+And displays the "Extended" status on the board
+```
+
+**Scenario 2: Unauthorized edit is rejected (unhappy)**
+
+```gherkin
+Given a student has no posting permission on the section board
+When the student attempts to change an entry's due date
+Then the system rejects the change
+And the original due date remains unchanged
+```
 
 ### US-07: Submit a suggested entry or correction
 
@@ -180,140 +294,6 @@ The criteria below use observable outcomes. Each story has at least three criter
 - [ ] The workload summary uses the saved Light, Medium, and Heavy weights of entries in that week.
 - [ ] (unhappy) Given the selected week has no entries, when the student opens the workload view, then the system displays a no-upcoming-requirements message and does not label the week as busy.
 
-### US-10: Assign another poster
-
-**Acceptance criteria:**
-
-- [ ] An authorized representative can select a member of the same section and grant that member posting permission.
-- [ ] A member with posting permission can create and edit entries on that section board.
-- [ ] (unhappy) A student without board-management permission cannot grant posting permission to another member.
-
-### US-11: Join a society board
-
-**Acceptance criteria:**
-
-- [ ] A student can view the list of society boards made available in the system.
-- [ ] When a student joins an available society board, that board's announcements become visible to the student.
-- [ ] (unhappy) When a society board is restricted and the student is not an approved member, the system denies access to its restricted announcements.
-
-### US-12: Open an entry's reference link
-
-**Acceptance criteria:**
-
-- [ ] When an entry contains a valid reference link, the student can select it to open the linked resource.
-- [ ] When an entry has no reference link, the system does not display a non-functional link control.
-- [ ] (unhappy) When a saved reference link is malformed or cannot be opened, the system displays an error or unavailable-link message without changing the entry.
-
-### Given–When–Then scenarios for Must-have stories
-
-The proposed Must-have stories are US-01, US-02, US-03, US-04, US-06, and US-09. The team should confirm this priority set during planning.
-
-#### US-01: View the section board
-
-**Scenario 1: Member views the board**
-
-```gherkin
-Given a student is a member of the "BSCS-2A" section board
-And the board contains "Calculus Quiz" for November 13, 2026 at 9:00 AM
-When the student opens the "BSCS-2A" board
-Then the system displays "Calculus Quiz" with its subject and due date
-```
-
-**Scenario 2: Non-member is blocked (unhappy)**
-
-```gherkin
-Given a student is not a member of the "BSCS-2A" section board
-When the student attempts to open that board
-Then the system denies access
-And the system displays an access message
-```
-
-#### US-02: Create a section board
-
-**Scenario 1: Valid board is created**
-
-```gherkin
-Given an authorized user is on the create-board page
-When the user enters "BSCS-2A" as the section name and submits the form
-Then the system creates the "BSCS-2A" board
-And records the creator as its initial board manager
-```
-
-**Scenario 2: Required section name is missing (unhappy)**
-
-```gherkin
-Given an authorized user is on the create-board page
-When the user submits the form without a section name
-Then the system does not create a board
-And displays a message that the section name is required
-```
-
-#### US-03: Add a deadline or announcement entry
-
-**Scenario 1: Valid entry is saved**
-
-```gherkin
-Given a block representative manages the "BSCS-2A" board
-When the representative enters "Calculus Quiz", "MAT061", "Quiz",
-"November 13, 2026 at 9:00 AM", and "Medium"
-And submits the entry
-Then the system saves the entry to the "BSCS-2A" board
-And displays the submitted details to board members
-```
-
-**Scenario 2: Missing required field (unhappy)**
-
-```gherkin
-Given a block representative is creating an entry
-When the representative leaves the subject field blank and submits the form
-Then the system does not save the entry
-And identifies the subject field as required
-```
-
-#### US-04: View calendar and task list
-
-**Scenario 1: Student switches views**
-
-```gherkin
-Given the section board contains "Physics Report" due November 14, 2026
-When the student opens the calendar view
-Then "Physics Report" appears on November 14, 2026
-When the student switches to the task-list view
-Then "Physics Report" appears with the same due date
-```
-
-**Scenario 2: Selected period has no entries (unhappy)**
-
-```gherkin
-Given the selected week has no saved section entries
-When the student opens the calendar view for that week
-Then the system displays an empty-state message
-And does not display entries from another section
-```
-
-#### US-06: Edit an entry and show its status
-
-**Scenario 1: Representative extends a deadline**
-
-```gherkin
-Given a block representative manages an entry due November 13, 2026 at 9:00 AM
-When the representative changes the due date to November 15, 2026 at 9:00 AM
-And sets the status to "Extended"
-Then the system saves the new due date
-And displays the "Extended" status on the board
-```
-
-**Scenario 2: Unauthorized edit is rejected (unhappy)**
-
-```gherkin
-Given a student has no posting permission on the section board
-When the student attempts to change an entry's due date
-Then the system rejects the change
-And the original due date remains unchanged
-```
-
-#### US-09: View weekly workload
-
 **Scenario 1: Busy week is summarized**
 
 ```gherkin
@@ -333,19 +313,79 @@ Then the system displays a no-upcoming-requirements message
 And does not mark the week as busy
 ```
 
-## 5. Quality Requirements and Constraints (EARS)
+### US-10: Assign another poster
+
+**Acceptance criteria:**
+
+- [ ] An authorized representative can select a member of the same section and grant that member posting permission.
+- [ ] A member with posting permission can create and edit entries on that section board.
+- [ ] (unhappy) A student without board-management permission cannot grant posting permission to another member.
+
+**Scenario 1: Posting permission is granted**
+
+```gherkin
+Given an authorized representative is managing the "BSCS-2A" section board
+And "Maria Santos" is a member of the "BSCS-2A" section
+When the representative grants Maria posting permission
+Then the system saves the permission
+And Maria can create and edit entries on the "BSCS-2A" board
+```
+
+**Scenario 2: Student without management permission cannot grant access (unhappy)**
+
+```gherkin
+Given a student is a member of the "BSCS-2A" board without board-management permission
+When the student attempts to grant "Maria Santos" posting permission
+Then the system denies the action
+And Maria's permissions remain unchanged
+```
+
+### US-11: Join a society board
+
+**Acceptance criteria:**
+
+- [ ] A student can view the list of society boards made available in the system.
+- [ ] When a student joins an available society board, that board's announcements become visible to the student.
+- [ ] (unhappy) When a society board is restricted and the student is not an approved member, the system denies access to its restricted announcements.
+
+### US-12: Open an entry's reference link
+
+**Acceptance criteria:**
+
+- [ ] When an entry contains a valid reference link, the student can select it to open the linked resource.
+- [ ] When an entry has no reference link, the system does not display a non-functional link control.
+- [ ] (unhappy) When a saved reference link is malformed or cannot be opened, the system displays an error or unavailable-link message without changing the entry.
+
+**Scenario 1: Valid link opens the resource**
+
+```gherkin
+Given the "Calculus Quiz" entry has a valid reference link
+When the student selects the reference link
+Then the system opens the linked resource
+```
+
+**Scenario 2: Saved link is malformed or unavailable (unhappy)**
+
+```gherkin
+Given the "Physics Report" entry has a malformed reference link
+When the student selects the reference link
+Then the system displays an unavailable-link message
+And the entry remains unchanged
+```
+
+## 5\. Quality Requirements and Constraints (EARS)
 
 The interview log does not contain agreed numerical performance targets. Therefore, this section uses testable behavior without inventing response-time or availability figures. Any numerical target must be discussed with stakeholders and recorded later.
 
 | ID | Requirement | EARS pattern | Type | Source | Number agreed with |
 |---|---|---|---|---|---|
-| NFR-01 | While a user is viewing a section board, the system shall display only entries belonging to that board and shall show each entry's saved date and time consistently in the calendar and task-list views. | State-driven | Quality | F2, F3, F6 | N/A, proposed by team |
+| NFR-01 | While a section board is displayed, the system shall show each entry’s due date and time identically in the calendar view and the task-list view. | State-driven | Quality(consistency) | F2, F3, F6 | N/A, proposed by team |
 | NFR-02 | When an authorized user saves an entry or an edit, the system shall display the saved information on the relevant section board. | Event-driven | Quality | F1, F4, F9 | N/A, proposed by team |
 | NFR-03 | The system shall require authorization before a user can create a board, publish an official entry, approve a suggestion, or grant posting permission. | Ubiquitous | Constraint / Security | F5, F7, F11 | N/A, proposed by team |
 | NFR-04 | When a required entry field is missing or invalid, the system shall identify the field and prevent the incomplete entry from being saved. | Event-driven | Quality | F3, F9 | N/A, proposed by team |
 | NFR-05 | The system shall not require automatic integration with MOLE, Google Classroom, Messenger, Facebook, or Discord in the first release. | Ubiquitous | Constraint | F11, F12 | N/A, stated in proposal scope |
 
-## 6. Use Case
+## 6\. Use Case
 
 ### Use-case diagram
 
@@ -396,7 +436,7 @@ flowchart LR
 | Primary actor | Block representative or authorized additional poster |
 | Precondition | The actor is signed in, has posting permission, and has access to an existing section board. |
 | Main success scenario | 1. The actor opens the section board. 2. The actor selects the option to add an entry. 3. The system displays the entry form. 4. The actor enters the title, subject, type, due date and time, workload weight, and any optional details or reference link. 5. The actor submits the form. 6. The system validates the required fields. 7. The system saves the entry to the selected section board. 8. The system displays the new entry in the board and relevant calendar, task-list, and workload views. |
-| Extensions | **4a. Missing or invalid information:** The actor leaves a required field blank or enters an invalid date/time. The system identifies the field, does not save the entry, and returns the actor to the form. **5a. Actor lacks permission:** The system rejects the attempt to publish and leaves the board unchanged. **6a. Actor cancels:** The system discards the unsaved form and returns to the board. |
+| Extensions | **4a. Missing or invalid information:** The actor leaves a required field blank or enters an invalid date/time. The system identifies the field, does not save the entry, and returns the actor to the form. <br> **5a. Actor lacks permission:** The system rejects the attempt to publish and leaves the board unchanged. <br>**6a. Actor cancels:** The system discards the unsaved form and returns to the board. |
 | Postcondition | A valid entry is saved to the selected board and is visible to its authorized members. No entry is created if validation or authorization fails. |
 | Stories covered | US-03, US-01, US-04, US-09, US-12 |
 
@@ -427,7 +467,7 @@ The table contains every user story exactly once. The order is a proposed team p
 | 9 | US-05 Mark an entry as completed  | Should | S | Quick win | Sprint 3 |
 | 10 | US-10 Assign another poster | Could | M | Big bet | Later |
 | 11 |  US-12 Open an entry's reference link | Could | S | Quick win | Later |
-| 12 | US-11 Join a society board | Won’t this release | L | Money pit for this semester's scope | Not this time\|  |
+| 12 | US-11 Join a society board | Won’t this release | L | Money pit for this semester's scope | Not this time |
 
 ### How we ordered it
 
@@ -479,7 +519,7 @@ The product backlog was reviewed to identify inconsistencies, unclear requiremen
 
 | Problem identified | Story or requirement | Review result or recommended action |
 | :---- | :---- | :---- |
-| The source column originally used an interview code (V1) instead of a finding ID, making the story difficult to trace to Section 2. | US-10 | Updated the source references to F1 and F9 to maintain traceability. |
+| The source column originally used an interview code (V1) instead of a finding ID, making the story difficult to trace to Section 2. | US-10 | Updated the source reference to F1 and recorded delegated posting as assumption A7. Confirm the need against the interview log before treating it as a validated stakeholder requirement. |
 | Some findings use vague terms such as "quickly" and "reliable," which are difficult to measure and test. | F6, F3 | Review the related quality requirements in Section 5 and establish measurable targets only when supported by actual stakeholder feedback or team agreement. |
 | F9 describes an entry form, which is a feature rather than a quality requirement. | F9 | Classified F9 as a functional finding and kept the quality-related concern separate from the feature description. |
 | The visibility of a student's completion status was not clearly specified. | US-05 | Clarify whether completion status is private to each student. If this is the team's intended behavior, add it to the acceptance criteria in Section 4. |
@@ -501,62 +541,72 @@ The story map and the highest-priority items in the ordered backlog should be pr
 3. Who decides an entry's workload weight (Light, Medium, or Heavy), and can it be changed after posting? (A3, US-09)  
 4. Besides the block representative, who should have permission to post entries or approve corrections, and can that permission be removed? (A4, US-10)  
 5. What should happen to an entry after its due date passes: stay visible, move to an archive, or be hidden?
+6. Is a student's completed status private to that student, or can other members of the section board see it? Confirm the intended rule and update US-05 acceptance criteria accordingly.
 
-## 13\. Member Contribution Record
-
-\[Record actual contributions, including interviews, analysis, writing stories and criteria, and reviewing.\]
+## 13. Member Contribution Record
 
 | Member | Interviews or analysis | Stories, criteria, or use case | Review or validation |
-| :---- | :---- | :---- | :---- |
-| Jeric I. Balos | Contributed two initial problem ideas and participated in comparing and selecting the project problem. | Wrote parts 7-9. The story map, The ordered backlog, and The definition of done | Pointed out problems to select stories |
-| Sammy R. DItanongun | Interviewed a block representative and analysed most of the responses gathered by the interviews. | Wrote parts 1-3. | Reviewed most parts from parts 1-12. |
+|---|---|---|---|
+| Jeric I. Balos | Contributed two initial problem ideas and participated in comparing and selecting the project problem. | Wrote Sections 7 to 9: the story map, ordered backlog, and Definition of Done. | Helped identify issues when selecting stories. |
+| Sammy R. Ditanongun | Interviewed a block representative and analyzed most of the responses gathered from the interviews. | Wrote Sections 1 to 3. | Reviewed most of Sections 1 to 12. |
+| Juniezsa Cassandra C. Bacus | Interviewed the student participants and analyzed their responses. | Wrote Sections 4 to 6. | Identified the needs of students, the officer, and authorized members to inform the proposed stakeholder walk-through. |
+| Amil H. Popawan | To be completed by the member. | To be completed by the member. | To be completed by the member. |
 
-## 14\. References
+## 14. References
 
-\[List the lecture slides and external sources used. Write None if no external sources were used.\]
+- RENEview, *Team Brainstorming and Preliminary Project Proposal*, supplied project proposal.
+- RENEview, *Interview Log*, supplied stakeholder interview notes.
+- RENEview, *Product Backlog Template*, supplied assignment template.
+- CSC181 Week 3 and Week 4 lecture slides informed the backlog format and validation approach. Add the exact lecture titles, instructor, or course reference details required by your instructor. Do not leave this as a generic reference if a formal citation is required.
+
+## 15. Team AI Use Declaration
+
+- [ ] No generative AI tools were used by any member in preparing this submission.
+- [x] One or more members used generative AI tools. Details are provided below.
 
 | Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
 |---|---|---|---|
-| Sammy R. Ditanongun | ChatGPT | Helped organize the supplied interview log and project proposal into the product backlog, including findings, assumptions, user stories, acceptance criteria, use case, story map, prioritization, and draft validation sections. | The team must compare every finding against the original interview log and proposal, correct any inaccurate interpretation, confirm estimates and priorities, and replace all pending fields with actual team records. |
+| Sammy R. Ditanongun, as the submitting user of this ChatGPT session | ChatGPT | Helped organize the supplied interview log and project proposal into the product backlog, including findings, assumptions, user stories, acceptance criteria, use case, story map, prioritization, and draft validation sections. | The team must compare every finding against the original interview log and proposal, correct any inaccurate interpretation, confirm estimates and priorities, and replace all pending fields with actual team records. |
 
 ### Main prompts or interaction summary
 
-The user asked ChatGPT to complete the product backlog template using the interview log and project proposal. ChatGPT used those supplied files to draft the sections and identify information that was not present in the sources. AI-generated suggestions in this document are not evidence of actual stakeholder interviews, stakeholder feedback, team meetings, or completed validation. The team remains responsible for checking and revising the document.
+The user asked ChatGPT to complete the product backlog template using the interview log and project proposal. ChatGPT used those supplied files to draft the sections and identify information that was not present in the sources. AI-generated suggestions in this document are not evidence of actual stakeholder interviews, stakeholder feedback, team meetings, or completed validation. The team remains responsible for checking and revising the document. Confirm that the named member and the description of AI assistance accurately reflect the team's actual use of ChatGPT before submission.
 
 We acknowledge that AI-generated suggestions are not evidence of actual stakeholder interviews, feedback, or verified user needs. Every finding in Section 2 and every walk-through in Section 11 must come from a real person the team spoke to or observed. We remain responsible for the accuracy and explainability of this submission.
 
-## 16\. Team Confirmation
+## 16. Team Confirmation
 
-We confirm that this document reflects our team's agreed-upon product backlog. All members listed below reviewed the final version, and each member will upload the same Markdown file to their personal CSC181 repository.
-
-## 16\. Team Confirmation
-
-We confirm that this document reflects our team's agreed-upon product backlog. All members listed below reviewed the final version, and each member will upload the same Markdown file to their personal CSC181 repository.
+The table below records each member's review status. Keep a member marked “Yes” only after that member has personally reviewed and agreed to the same final file. The submission is not fully confirmed while any member remains unconfirmed.
 
 | Member | Reviewed final version |
-| :---- | :---- |
-| Jeric I.Balos | Yes |
+|---|---|
+| Juniezsa Cassandra C. Bacus | Yes |
 | Sammy R. Ditanongun | Yes |
+| Jeric I. Balos | Yes |
+| Amil H. Popawan | To be confirmed |
 
 ## Submission Checklist
 
-- [ ] Interviews cover at least two stakeholder groups, with sources coded and no personal information.  
-- [ ] The needs table has at least 8 findings, each labelled F, Q, or C.  
-- [ ] Assumptions are recorded separately from evidence.  
-- [ ] There are 10 to 15 user stories, each with a real role, a "so that", and at least one finding.  
-- [ ] Epics are split, and at least two rewrites are recorded.  
-- [ ] Every story has at least 3 acceptance criteria, including an unhappy path, with no weak words.  
-- [ ] Every Must-have story has at least 2 Given–When–Then scenarios.  
-- [ ] At least 3 quality requirements or constraints use EARS patterns.  
-- [ ] One use case has a diagram, a main success scenario, and at least 2 extensions.  
-- [ ] The story map has a Release 1 line that crosses every journey step.  
-- [ ] Every story has a MoSCoW label and a size, and the backlog is in one order with no ties.  
-- [ ] Must-haves fit in about 60% of capacity. Won't-have stories are kept, not deleted.  
-- [ ] A Definition of Done is included.  
-- [ ] The traceability table covers every Must-have story.  
-- [ ] The team review and the stakeholder walk-through are recorded.  
-- [ ] Contributions, references, and AI use are declared.  
-- [ ] All members reviewed the same final document.  
-- [ ] Each member saved the file as `activities/product-backlog.md`, with images in `activities/backlog-images/`.  
-- [ ] Each member committed and pushed their copy to their personal repository.  
-- [ ] Each member submitted their own GitHub file link through MOLE before November 9, 2026 23:59:59.
+- [x] Interviews cover at least two stakeholder groups, with sources coded and no personal contact details included.
+- [x] The needs table has at least 8 findings, each labelled F, Q, or C.
+- [x] Assumptions are recorded separately from evidence.
+- [x] There are 10 to 15 user stories, each with a real role, a "so that", and at least one finding.
+- [x] Epics are split, and at least two rewrites are recorded.
+- [x] Every story has at least 3 acceptance criteria, including an unhappy path.
+- [x] Every proposed Must-have story has at least 2 Given-When-Then scenarios.
+- [x] At least 3 quality requirements or constraints use EARS patterns.
+- [x] One use case has a diagram, a main success scenario, and at least 2 extensions.
+- [x] The story map has a Release 1 line that crosses every journey step.
+- [x] Every story has a MoSCoW label and a size, and the backlog is in one order with no ties.
+- [ ] Must-haves fit in about 60% of capacity. Team capacity and estimates still need confirmation.
+- [x] Won't-have stories are kept in the backlog, not deleted.
+- [x] A Definition of Done is included.
+- [x] The traceability table covers every proposed Must-have story.
+- [ ] The team review and stakeholder walk-through are recorded as completed. The walk-through still needs to be conducted and documented.
+- [ ] Contributions, references, and AI use are declared. The draft declarations are present, but the team must verify them and add any required lecture-slide details.
+- [ ] All members reviewed the same final document.
+- [ ] Each member saved the file as `activities/product-backlog.md`, with any images in `activities/backlog-images/`.
+- [ ] Each member committed and pushed their copy to their personal repository.
+- [ ] Each member submitted their own GitHub file link through MOLE.
+
+**Before submission:** Fill in the interview dates and interviewers if your team has those records, conduct and record the stakeholder walk-through, confirm the INVEST review and team contributions, estimate sprint capacity, and obtain all members' confirmation. The interview log does not provide enough information to fill these in honestly.
